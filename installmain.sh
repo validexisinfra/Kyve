@@ -102,4 +102,4 @@ sudo systemctl daemon-reload
 sudo systemctl enable kyved
 sudo systemctl start kyved 
 
-print "✅ Setup complete. Use 'journalctl -u agoricd -f -o cat' to view logs"
+print "✅ Setup complete. Use 'journalctl -u kyved -f -o cat' to view logs"
