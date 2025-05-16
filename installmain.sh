@@ -69,14 +69,14 @@ s%:26657%:${CUSTOM_PORT}657%g;
 s%:26656%:${CUSTOM_PORT}656%g;
 s%:6060%:${CUSTOM_PORT}060%g;
 s%^external_address = \"\"%external_address = \"$(wget -qO- eth0.me):${CUSTOM_PORT}56\"%;
-s%:26660%:${CUSTOM_PORT}660%g" $HOME/.agoric/config/config.toml
+s%:26660%:${CUSTOM_PORT}660%g" $HOME/.kyve/config/config.toml
 
 sed -i.bak -e "s%:1317%:${CUSTOM_PORT}17%g;
 s%:8080%:${CUSTOM_PORT}080%g;
 s%:9090%:${CUSTOM_PORT}090%g;
 s%:9091%:${CUSTOM_PORT}091%g;
 s%:8545%:${CUSTOM_PORT}545%g;
-s%:8546%:${CUSTOM_PORT}546%g" $HOME/.agoric/config/app.toml
+s%:8546%:${CUSTOM_PORT}546%g" $HOME/.kyve/config/app.toml
 
 sudo tee /etc/systemd/system/kyved.service > /dev/null <<EOF
 [Unit]
