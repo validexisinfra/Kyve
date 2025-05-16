@@ -38,7 +38,7 @@ sudo mv kyved $HOME/go/bin/kyved
 
 kyved config set client chain-id kyve-1
 kyved config set client keyring-backend file
-kyved config node tcp://localhost:${CUSTOM_PORT}657
+kyved config set client node tcp://localhost:${CUSTOM_PORT}657
 kyved init "$MONIKER" --chain-id kyve-1
 
 wget -L -O $HOME/.kyve/config/genesis.json https://server-1.stavr.tech/Mainnet/Kyve/genesis.json
