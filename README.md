@@ -3,12 +3,12 @@ KYVE, the Web3 data lake solution, is a protocol that enables data providers to 
 
 # 🌟 Kyve Setup & Upgrade Scripts
 
-A collection of automated scripts for setting up and upgrading Kyve nodes on **Mainnet (kyve-1)**.
+A collection of automated scripts for setting up and upgrading Kyve nodes on **Mainnet (`kyve-1`)**.
 
 ---
 
 ### ⚙️ Validator Node Setup  
-Install a full Kyve validator node with custom ports, snapshot import, and systemd configuration.
+Install a Kyve validator node with custom ports, snapshot download, and systemd service configuration.
 
 ~~~bash
 source <(curl -s https://raw.githubusercontent.com/validexisinfra/Kyve/main/installmain.sh)
@@ -16,7 +16,7 @@ source <(curl -s https://raw.githubusercontent.com/validexisinfra/Kyve/main/inst
 ---
 
 ### 🔄 Validator Node Upgrade 
-Update your agd binary and restart the systemd service safely.
+Upgrade your Kyve node binary and safely restart the systemd service.
 
 ~~~bash
 source <(curl -s https://raw.githubusercontent.com/validexisinfra/Kyve/main/upgrademain.sh)
