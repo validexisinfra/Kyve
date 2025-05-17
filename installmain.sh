@@ -17,7 +17,7 @@ print_error() {
 read -p "Enter your node MONIKER: " MONIKER
 read -p "Enter your custom port prefix (e.g. 16): " CUSTOM_PORT
 
-print "Installing Agoric Node with moniker: $MONIKER"
+print "Installing Kyve Node with moniker: $MONIKER"
 print "Using custom port prefix: $CUSTOM_PORT"
 
 print "Updating system and installing dependencies..."
