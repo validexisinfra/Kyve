@@ -50,7 +50,6 @@ sed -i.bak -e "s/^external_address *=.*/external_address = \"$external_address:2
 peers=""
 sed -i.bak -e "s/^persistent_peers *=.*/persistent_peers = \"$peers\"/" $HOME/.kyve/config/config.toml
 seeds=""
-
 sed -i.bak -e "s/^minimum-gas-prices *=.*/minimum-gas-prices = \"0.0ukyve\"/;" ~/.kyve/config/app.toml
 sed -i -e "s/prometheus = false/prometheus = true/" $HOME/.kyve/config/config.toml
 sed -i -e "s/^indexer *=.*/indexer = \"null\"/" $HOME/.kyve/config/config.toml
